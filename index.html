@@ -1,3 +1,178 @@
-<h1>placeHold<h1>
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Porfolio: TR Ingram</title>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href="https://js.arcgis.com/4.23/esri/themes/dark/main.css"/>
+        <link rel= stylesheet href='main.css'/>
+        <script src= "script.js"></script>
+    </head>
+        <body>
+            
+            <!-- Top Navbar -->
+            <div class='w3-top'>
+                <div class="w3-bar" id="myNavbar">      
+                        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href='javascript:void(0);' onclick="toggleFunction()" title="Toggle Navigation Menu">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                <a href='#home' class='w3-bar-item w3-button'> HOME 
+                    </a>
+                <a href='#about' class='w3-bar-item w3-button w3-hide-small'>
+                        <i class='fa fa-user'></i> ABOUT ME
+                    </a>
+                <a href='#myplaces' class='w3-bar-item w3-button w3-hide-small'>
+                        <i class='fa fa-globe'></i> MY PLACES 
+                    </a>
+                <a href='#app' class='w3-bar-item w3-button w3-hide-small'>
+                        <i class='fa fa-space-shuttle'></i> FAVE APP
+                    </a>
+                <a href="#art" class="w3-bar-item w3-button w3-hide-small">
+                        <i class="fa fa-picture-o"></i> ART
+                    </a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small">
+                        <i class="fa fa-envelope"></i> CONTACT 
+                    </a>
+                <a href='#' class='w3-bar-item w3-button w3-hide-small w3-right w3-hover-red'>
+                    <i class='fa fa-search'></i>
+                    </a>
+                
+                </div>
+                
+                <!-- Nav on small screens -->
+                <div id='navDemo' class='w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium'-->
+                    <a href='#about' class='w3-bar-item w3-button' onclick= toggleFunction() >ABOUT ME</a>
+                    <a href='#myplaces' class='w3-bar-item w3-button' onclick='toggleFunction()'>MY PLACES</a>
+                    <a href='#app' class='w3-bar-item w3-button' onclick='toggleFunction()'>FAVE APP</a>
+                    <a href='#contact' class='w3-bar-item w3-button' onclick='toggleFunction()'>CONTACT</a>
+                    <a href='#' class='w3-bar-item w3-button' onclick='toggleFunction()'>SEARCH</a>
+                </div>
+            </div>
+                   
+            <!-- first parallax img w Logo Text -->
+            <div class='bgimg-1 w3-display-container w3-opacity-min' id='home'>
+                <div class='w3-display-middle' style='white-space:nowrap;'>
+                    <span class='w3-center w3-padding-large w3-black w3-xlarge w3-wide w3=animate-opacity'>PORTFOLIO: TR INGRAM</span>
+                </div>
+            </div>
+            
+            <!-- container (About) -->
+            <div class='w3-content w3-contrainer w3-padding-20' id='about'>
+                <h3 class='w3-center'>ABOUT ME</h3>
+                <p class='w3-center'><em> I love maps</em></p>
+                    <iframe width="1000px" height="750px" src="https://ges-gislab.maps.arcgis.com/apps/MapJournal/index.html?appid=4d21c4a8425945168f3fa8892f23cd87" frameborder="1" scrolling="no"></iframe>
+            </div>
+                               
+            <!-- 2nd parallax w port img -->
+            <div class='bgimg-2 w3-display-container w3-opacity-min'>
+                <div class='w3-display-middle'>
+                    <span class='w3-xxlarge w3-text-white w3-wide'>My Places</span>
+                </div>
+            </div>
+                
+            <!-- container (places sect) -->
+            <div class='w3-content w3-container w3-padding-64' id='myplaces'>
+                <div id="places" class="section">              
+                   <iframe width="100%" height="750px" src="favorite_places/index.html" frameborder="0" scrolling="no"></iframe>
+            </div> 
+            </div>
+            
+            
+            <!-- 3rd parallax w glacier img -->
+            <div class='bgimg-4 w3-display-container w3-opacity-min'>
+                <div class='w3-display-middle'>
+                    <span class='w3-xxlarge w3-text-black w3-wide'>My Favorite App</span>
+                </div>
+            </div>
+                
+            <!-- container (app sect) -->
+            <div class='w3-content w3-container w3-padding-64' id='app'>
+                <div id="app" class="section">
+                    <iframe width="100%" height="750px" src="half_earth_globe/index.html" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div> 
+            
+             <!-- 5th parallax w art img -->
+            <div class='bgimg-4 w3-display-container w3-opacity-min'>
+                <div class='w3-display-middle'>
+                    <span class='w3-xxlarge w3-text-black w3-wide'>Earth As Art</span>
+                </div>
+            </div>
+                
+            <!-- container (art sect) -->
+            <div class='w3-content w3-container w3-padding-64' id='art'>
+                <div id="art" class="section">
+                    <iframe width="100%" height="750px" src="/art/index.html" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div> 
+                       
+            <!-- last parallax w contact text -->
+            <div class='bgimg-3 w3-display-container w3-opacity-min'>
+                <div class='w3-display-middle'>
+                    <span class='w3-xxlarge w3-text-white w3-wide'>CONTACT</span>
+                </div>
+            </div>
+            
+            <!-- conatiner (contact sect) -->
+            <div class='w3-content w3-container w3-padding-64' id='contact'>
+                <h3 class='w3-center'> Student at UCCS</h3>
+                    <p class='w3-center'>
+                        <em>I'd love your feedback!</em>
+                    </p>
+            
+                <div class='w3-row w3-padding-32 w3-section'>
+                    <div class='w3-col m4 w3-container'>
+                        <img src='/img/bonk.JPG' class='w3-image w3-round'style='width:100%'></div>
+                    <div class='w3-col m8 w3-panel'>    
+                        <div class='w3-large w3-margin-bottom'>
+                            <i class='fa fa-map-maker fa-hw w3-hover-text-black w3-xlarge w3-margin-right'></i>Colorado Springs,CO US<br>
+                            <i class='fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right'></i> Phone: 210-552-3320<br>
+                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email: tyeingram@gmail.com<br>
+                        </div>                      
+                        <p> Drop in the GES lab or leave me a note:
+                        </p>
+                            <form action='/action_page.php' target='_blank'>
+                                <div class='w3-row-padding' style='margin:0 -16px 8px -16px'>
+                                    <div class='w3-half'>
+                                        <input class='w3-inojut w3-border' type='text' placeholder='Name' required name='Name'>
+                                    </div>                                       
+                                    <div class='w3-half'>
+                                        <input class='w3-inout w3-border' typr='text' placeholder='Email' required name='Email'>
+                                    </div>       
+                                    <div class='w3-half'>
+                                            <input class='w3-inout w3-border' typr='text' placeholder='Message' required name='Message'>
+                                                <button class='w3-button w3-black w3-right w3-selection' type='submit'>     
+                                                    <i class='fa fa-paper-plane'></i> SEND MESSAGE
+                                                </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+    
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+    </body>
+</html>
+        
+
   
   
