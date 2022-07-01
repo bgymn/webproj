@@ -16,7 +16,7 @@ html,body{height: 100%;
         
         /* First Image (logo. Full height) */
             .bgimg-1 {
-                background-image: [!Mountainrange upward snow](docs/assets/images/bgimg-1.gif);
+                background-image: url(https://github.com/bgymn/webproj/blob/95349d5c27ff3e6c2a3c05c52dbac2d1c646238a/docs/assets/images/bgimg-1.gif);
                 min-height: 100%;
             }
             
