@@ -22,13 +22,13 @@ html,body{height: 100%;
             
         /* Second image (Portfolio) */
             .bgimg-2 {
-                background-image: url(img/bgimg-2.jpeg);
+                background-image: url('../images/bgimg-2.jpeg');
                 min-height:400px;
             }
        
         /* Third iamge (Contact) */
             .bgimg-3 {
-                background-image: url(img/bgimg-3.jpeg);
+                background-image: url('../images/bgimg-3.jpeg');
                 min-height:400px;
             }
 
