@@ -34,15 +34,15 @@ html,body{height: 100%;
 
         /*forth iamge (appContent) */
             .bgimg-4 {
-                background-image: url(img/bgimg-4.jpeg);
+                background-image: url('../images/eyeBlue2.jpg');
                 min-height:400px;
             }
 
-        /*fifth iamge (art) 
+        /*fifth iamge (art) */
             .bgimg-4 {
-                background-image: url(img/bgimg-4.jpeg);
+                background-image: url('../images/spirit.jpg');
                 min-height:400px;
-            }*/
+            }
             
             .w3-wide {letter-spacing: 10px;}
             .w3-hover-opacity {cursor: pointer;}
