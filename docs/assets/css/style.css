@@ -7,7 +7,7 @@ html,body{height: 100%;
             line-height: 1.8;
             }
             
-.bgimg-1, .bgimg-2, .bgimg-3, .eyeBlue2 , .spirit{
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 , .bgimg-5{
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -33,13 +33,13 @@ html,body{height: 100%;
             }
 
         /*forth iamge (appContent) */
-            .eyeBlue2 {
+            .bgimg-4 {
                 background-image: url('../images/eyeBlue2.jpg');
                 min-height:400px;
             }
 
         /*fifth iamge (art) */
-            .spirit {
+            .bgimg-5 {
                 background-image: url('../images/spirit.jpg');
                 min-height:400px;
             }
