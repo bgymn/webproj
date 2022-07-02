@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>myPlaces</title>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.23/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.23/"></script>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      #optionsDiv {
+        position: absolute;
+        bottom: 17px;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1;
+        text-align: center;
+      }
+
+      button {
+        background: white;
+        padding: 7px;
+        border: 1px solid #005e95;
+        font-size: 0.9em;
+        margin: 5px;
+        color: #005e95;
+      }
+
+      button:hover {
+        background: #005e95;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+
+    <script>
+      require(["esri/Map", "esri/views/SceneView"], (Map, SceneView) => {
+        const map = new Map({
+          basemap: "dark-gray-vector"
+        });
+
+        const view = new SceneView({
+          container: "viewDiv",
+          map: map,
+          zoom: 4
+        });
+
+
+        document
+          .getElementById("bounceCOS")
+          .addEventListener("click", function () {
+            view
+              .goTo(
+                {
+                  center: [-104.8214, 38.8339],
+                  zoom:8
+                
+                })
+              .catch(catchAbortError);
+            });
+          
+           document
+          .getElementById("bounceOH")
+          .addEventListener("click", function () {
+            view
+              .goTo(
+                {
+                  center: [-84.5120, 39.1031],
+                  zoom:6
+                
+                })
+              .catch(catchAbortError);
+            });
+          
+           document
+          .getElementById("bounceITY")
+          .addEventListener("click", function () {
+            view
+              .goTo(
+                {
+                  center: [12.3155, 45.4408],
+                  zoom:6
+                
+                })
+              .catch(catchAbortError);
+            });
+          
+           document
+          .getElementById("bounceHOL")
+          .addEventListener("click", function () {
+            view
+              .goTo(
+                {
+                  center: [4.9041, 52.3676],
+                  zoom:6
+                
+                })
+              .catch(catchAbortError);
+            });
+          
+           document
+          .getElementById("bounceGNP")
+          .addEventListener("click", function () {
+            view
+              .goTo(
+                {
+                  center: [-113.7870, 48.7596],
+                  zoom:6
+                
+                })
+              .catch(catchAbortError);
+            });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="optionsDiv">
+      <button id="bounceCOS">Colorado Springs, CO, USA</button>
+      <button id="bounceITY">Venice, Italy</button>
+      <button id="bounceOH">Cincinnati, OH, USA</button>
+      <button id="bounceHOL">Amsterdam, Hollad</button>
+      <button id="bounceGNP">Glacier National Park, Montana</button>
+    </div>
+    <div id="viewDiv"></div>
+  </body>
+</html>
