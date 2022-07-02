@@ -34,13 +34,13 @@ html,body{height: 100%;
 
         /*forth iamge (appContent) */
             .bgimg-4 {
-                background-image: url('../images/eyeBlue2.jpg');
+                background-image: url('../images/bgimg-4.jpg');
                 min-height:400px;
             }
 
         /*fifth iamge (art) */
             .bgimg-5 {
-                background-image: url('../images/spirit.jpg');
+                background-image: url('../images/bgimg-5.jpg');
                 min-height:400px;
             }
             
