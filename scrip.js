@@ -1,4 +1,13 @@
 /*global myFunction, document, window*/
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -45,22 +54,10 @@ function myFunction(cd) {
   document.getElementById("Experience").innerHTML = table;
 }
 
-// Modal Image Gallery
-/*function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}*/
-
-
-
-
 /*
 
 document.getElementById("testing").addEventListener("click",function(){
-                document.getElementById("testingp").innerHTML="I clicked the button.";
-                
+                document.getElementById("testingp").innerHTML="I clicked the button.";   
             });
 */
 
