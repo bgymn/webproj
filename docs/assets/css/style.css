@@ -7,7 +7,7 @@ html,body{height: 100%;
             line-height: 1.8;
             }
             
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 , .bg-img5{
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -39,7 +39,7 @@ html,body{height: 100%;
             }
 
         /*fifth iamge (art) */
-            .bgimg-4 {
+            .bgimg-5 {
                 background-image: url('../images/spirit.jpg');
                 min-height:400px;
             }
@@ -60,7 +60,7 @@ html,body{height: 100%;
 
 Turn off parallax for tabs and phones 
             @media only screen and (max-device-width: 1600px) {
-                .bgimg-1, .bgimg-2, .bgimg-3 {
+                .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 , .bg-img5 {
                     background-attachment: scroll;
                     min-height: 400 px;
                 }
