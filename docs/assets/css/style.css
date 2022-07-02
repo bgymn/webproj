@@ -7,7 +7,7 @@ html,body{height: 100%;
             line-height: 1.8;
             }
             
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 , .bg-img5{
+.bgimg-1, .bgimg-2, .bgimg-3, .eyeBlue2 , .spirit{
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -33,13 +33,13 @@ html,body{height: 100%;
             }
 
         /*forth iamge (appContent) */
-            .bgimg-4 {
+            .eyeBlue2 {
                 background-image: url('../images/eyeBlue2.jpg');
                 min-height:400px;
             }
 
         /*fifth iamge (art) */
-            .bgimg-5 {
+            .spirit {
                 background-image: url('../images/spirit.jpg');
                 min-height:400px;
             }
@@ -60,7 +60,7 @@ html,body{height: 100%;
 
 Turn off parallax for tabs and phones 
             @media only screen and (max-device-width: 1600px) {
-                .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 , .bg-img5 {
+                .bgimg-1, .bgimg-2, .bgimg-3, .eyeBlue2 , .spirit {
                     background-attachment: scroll;
                     min-height: 400 px;
                 }
