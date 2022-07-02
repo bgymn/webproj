@@ -1,13 +1,5 @@
 /*global myFunction, document, window*/
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -40,19 +32,6 @@ function loadXMLDoc() {
   xmlhttp.send();
 }
 
-
-/*modal functioning*/
-function myFunction(cd) {
-  let table="<tr><th>Position</th><th>Dates</th><th>Description</th></tr>";
-  for (let i = 0; i < exp.length; i++) {
-    table += "<tr><td>" +
-    exp[i].getElementsByTagName("Position")[0].childNodes[0].nodeValue +
-    "</td><td>" +
-    exp[i].getElementsByTagName("Dates")[0].childNodes[0].nodeValue +
-    "</td></tr>";
-  }
-  document.getElementById("Experience").innerHTML = table;
-}
 
 /*
 
