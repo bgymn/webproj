@@ -47,13 +47,13 @@ html,body{height: 100%;
             .w3-wide {letter-spacing: 10px;}
             .w3-hover-opacity {cursor: pointer;}
 
-            #optionsDiv {
+/*             #optionsDiv {
                 position: absolute;
                 bottom: 17px;
                 width: 100%;
                 padding: 20px 0;
                 z-index: 1;
-                text-align: center;
+                text-align: center; */
             }
 
         
