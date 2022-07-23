@@ -24,9 +24,6 @@
                 <a href='#about' class='w3-bar-item w3-button w3-hide-small'>
                         <i class='fa fa-user'></i> ABOUT ME
                     </a>
-                <a href='#myplaces' class='w3-bar-item w3-button w3-hide-small'>
-                        <i class='fa fa-globe'></i> MY PLACES 
-                    </a>
                 <a href='#app' class='w3-bar-item w3-button w3-hide-small'>
                         <i class='fa fa-space-shuttle'></i> APPS
                     </a>
@@ -45,7 +42,6 @@
                 <!-- Nav on small screens -->
                 <div id='navDemo' class='w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium'-->
                     <a href='#about' class='w3-bar-item w3-button' onclick= toggleFunction() >ABOUT ME</a>
-                    <a href='#myplaces' class='w3-bar-item w3-button' onclick='toggleFunction()'>MY PLACES</a>
                     <a href='#app' class='w3-bar-item w3-button' onclick='toggleFunction()'>APPS</a>
                     <a href='#art' class='w3-bar-item w3-button' onclick='toggleFunction()'>ART</a>
                     <a href='#contact' class='w3-bar-item w3-button' onclick='toggleFunction()'>CONTACT</a>
@@ -61,43 +57,85 @@
             </div>
             
             <!-- container (About) -->
-            <div class='w3-content w3-contrainer w3-padding-20' id='about'>
+            <div class='w3-content w3-contrainer w3-padding-5' id='about'>
                 <h3 class='w3-center'>ABOUT ME</h3>
                 <p class='w3-center'><em> I love maps</em></p>
                     <iframe width='100%' height="750px" src="https://ges-gislab.maps.arcgis.com/apps/MapJournal/index.html?appid=4d21c4a8425945168f3fa8892f23cd87" frameborder="1" scrolling="no"></iframe>
             </div>
                                
-            <!-- 2nd parallax w port img -->
+            <!-- 2nd parallax w port img 
             <div class='bgimg-2 w3-display-container w3-opacity-min'>
                 <div class='w3-display-middle' style='white-space:nowrap;'>
                     <span class='w3-center w3-padding-large w3-black w3-xlarge w3-wide w3=animate-opacity'>MY PLACES</span>
                 </div>
             </div>
                 
-            <!-- container (places sect) -->
+            <!-- container (places sect) 
             <div class='w3-content w3-container w3-padding-64' id='myplaces'>
                 <div id="places" class="section">              
                    <iframe width='100%' height="750px" src="docs/assets/favorite_places/index.html" frameborder="0" scrolling="no"></iframe>
             </div> 
-            </div>
+            </div> -->
             
             
             <!-- 3rd parallax img -->
             <div class='bgimg-5 w3-display-container w3-opacity-min'>
                 <div class='w3-display-middle' style='white-space:nowrap;'>
-                    <span class='w3-center w3-padding-large w3-black w3-xlarge w3-wide w3=animate-opacity'>APPS</span>
+                    <span class='w3-center w3-padding-large w3-black w3-xlarge w3-wide w3=animate-opacity'>Geospatial Applications Portfolio</span>
                 </div>
             </div>
                 
             <!-- container (app sect) -->
-            <div class='w3-content w3-container w3-padding-64' id='app'>
-                <div id="app" class="section">
-                    <iframe width='100%' height="750px" src="docs/assets/half_earth_globe/index.html" frameborder="0" scrolling="no"></iframe>
+            <div class='w3-content w3-container' id='app'>            
+                <hr>
+                <h2 class="w3-center">Explore some of my work..</h2>
+                
+                <!--GEE APP-->
+                <button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Denver Urban Heat Island (UHI) explorer 2003 to 2018</button>
+                <div id="Demo2" class="w3-hide">
+                    <div class="w3-container">
+                        <iframe width='100%' height="750px" src="https://tyeingram.users.earthengine.app/view/uhidenverexplorer" frameborder="0" scrolling="no"></iframe>
+                    </div>
                 </div>
-                <div id="app" class="section">
-                    <iframe width='1000px' height="750px" src="https://ges-gislab.maps.arcgis.com/apps/webappviewer/index.html?id=cd729eb0828c4ae38388abc0f4ce8dd6" frameborder="0" scrolling="no"></iframe>
+                
+                <!--uhi arc app-->
+                <button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align"> National UHI socio-economic relationship</button>
+                <div id="Demo2" class="w3-hide">
+                    <div class="w3-container">
+                        <iframe
+                        width='100%' height="750px" src="https://ges-gislab.maps.arcgis.com/apps/webappviewer/index.html?id=cd729eb0828c4ae38388abc0f4ce8dd6" frameborder="0" scrolling="no">
+                        </iframe>
+                    </div>
                 </div>
-            </div> 
+                
+                <!--half earth globe-->
+                <button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Half earth globe</button>
+                <div id="Demo3" class="w3-hide">
+                    <div class="w3-container">
+                        <iframe width='100%' height="750px" src="docs/assets/half_earth_globe/index.html" frameborder="0" scrolling="no">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!--my places-->
+                <button onclick="myAccFunc('Demo4')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Fly to my favorite places</button>
+                    <div id="Demo4" class="w3-hide">
+                      <div class="w3-container">
+                          <iframe width='100%' height="750px" src="docs/assets/favorite_places/index.html" frameborder="0" scrolling="no">
+                          </iframe>
+                      </div>
+                    </div>
+                
+            
+                <!--fires and conflict in Ukraine-->
+                <button onclick="myAccFunc('Demo4')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Fires and conflict in Ukraine</button>
+                    <div id="Demo4" class="w3-hide">
+                      <div class="w3-container">
+                          <iframe width='100%' height="750px" src=https://www.arcgis.com/apps/dashboards/ca3af202510b4fdb9c8237500509bf69 frameborder="0" scrolling="no">
+                          </iframe>
+                      </div>
+                    </div>
+                </div> 
             
              <!-- 5th parallax w art img -->
             <div class='bgimg-4 w3-display-container w3-opacity-min'>
@@ -107,7 +145,7 @@
             </div>
                 
             <!-- container (art sect) -->
-            <div class='w3-content w3-container w3-padding-64' id='art'>
+            <div class='w3-content w3-container w3-padding-5' id='art'>
                 <div id="art" class="section">
                     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
                     <div class="w3-row-padding w3-center">
@@ -210,7 +248,7 @@
 
     </body>
 </html>
-        
+
 
   
   
